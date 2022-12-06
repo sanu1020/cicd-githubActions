@@ -14,7 +14,7 @@ jobs:
       - name: configure aws credentials
         uses: aws-actions/configure-aws-credentials@v1
         with:
-          role-to-assume: arn:aws:iam::426371584621:role/ec2-creation
+          role-to-assume: ${{ secrets.ROLE_TO_ASSUME }}
           role-session-name: sampleec2
           aws-region: us-east-1
       # Upload a file to AWS s3
