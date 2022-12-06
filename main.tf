@@ -4,7 +4,7 @@ resource "aws_instance" "cicd-githubactions" {
   key_name = "terraform-key"
 
   tags = {
-    Name = "cicd pipeline github actions"
+    Name = "cicd pipeline "
   }
  
 }
